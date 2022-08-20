@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
+*
+{   margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+    
+
+}
+
+header 
+{  background-color: black;
+   display: flex;
+   gap: 20px;}
+
+.logo {
+   width: 200px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+    padding-block: 10px;
+    gap: 10px;
+    font-weight: 600;
+    align-items: center;
+    height: 100%;
+    
+}
+
+
+
+.menu_item a{
+    display: inline;
+    margin-right: 30px;
+    color: white;
+    text-decoration: none;
+    
+
+}
+
+.imagenPrincipal {
+    height: 80vh;
+    background-image: url(../img/barberia.jpg);
+    background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center center;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   padding-inline: 450px;
+   font-weight: 800;
+   align-items: center;
+   
+}
+
+.imagenPrincipal p 
+{color: white;
+    padding-inline: 15px;
+text-align: center;}
+
+
+.grid_gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 2fr);
+  gap: 10px;
+
+}
+
+.grid_gallery .img-box img {
+    border-radius: 5px;
+    width: 400px;
+    height: 400px;
+    opacity: 0.9;
+    transition: all 1.5s;
+}
+.grid_gallery .img-box img:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.grid_gallery .img-box span {
+    position: absolute;
+    bottom: 50px;
+    left: 130px;
+    color: aliceblue; }
+
+    h2 {
+        text-align: center;
+        font-weight: 800;
+    }
+    
+    h3 {
+        text-align: center;
+        font-weight: 800;
+    }
+    
+    .contenservic
+    {display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .servicimg {
+        width: 50%;
+       
+    }
+    
+    .servicimage {
+      position: absolute;
+    }
+    
+    .tarjetas {
+        display: flex;
+        padding: 60px;
+        gap: 30px;
+    }
+    .tarjeta {
+        border-radius: 30px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        
+    }
+
+    .tarjeta__imagen {
+        max-width: 100%;
+    }
+
+.wpp {  position: fixed;
+bottom: 10px;
+right: 10px;
+width: 100px;
+}
+
+ /**** ANIMISTA ****/
+ .slide-in-elliptic-top-fwd{animation:slide-in-elliptic-top-fwd .7s cubic-bezier(.25,.46,.45,.94) both}
+
+@keyframes slide-in-elliptic-top-fwd{0%{transform:translateY(-600px) rotateX(-30deg) scale(0);transform-origin:50% 100%;opacity:0}100%{transform:translateY(0) rotateX(0) scale(1);transform-origin:50% 1400px;opacity:1}}
+
+.roll-in-left{animation:roll-in-left .6s ease-out both}
+
+ @keyframes roll-in-left{0%{transform:translateX(-800px) rotate(-540deg);opacity:0}100%{transform:translateX(0) rotate(0deg);opacity:1}}
+
+ @media screen and (max-width: 480px) {
+    .grid_gallery {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 2fr);
+      gap: 10px;
+    
+    }
+    
+ }
+
+ @media screen and (max-width: 768px) {
+    display: { grid;
+        grid-template-columns: repeat(1, 2fr);
+        grid-template-rows: repeat(3, 1fr);
+      gap: 10px;
+    
+    }
+}
