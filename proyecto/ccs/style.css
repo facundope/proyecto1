@@ -10,7 +10,7 @@
 }
 
 header 
-{  background-color: black;
+{  background-color: white;
    display: flex;
    gap: 20px;}
 
@@ -24,29 +24,11 @@ header
     
 }
 
-.menu {
-    display: flex;
-    list-style-type: none;
-    padding-block: 10px;
-    gap: 10px;
-    font-weight: 600;
-    align-items: center;
-    height: 100%;
-    
-}
-
-
-
-.menu_item a{
-    display: inline;
-    margin-right: 30px;
+.navbar-brand {
     color: white;
-    text-decoration: none;
-    
-
 }
 
-.imagenPrincipal {
+.img-fluid {
     height: 80vh;
     background-image: url(../img/barberia.jpg);
     background-repeat: no-repeat;
@@ -67,31 +49,6 @@ header
 text-align: center;}
 
 
-.grid_gallery {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 2fr);
-  gap: 10px;
-
-}
-
-.grid_gallery .img-box img {
-    border-radius: 5px;
-    width: 400px;
-    height: 400px;
-    opacity: 0.9;
-    transition: all 1.5s;
-}
-.grid_gallery .img-box img:hover {
-    transform: scale(1.1);
-    opacity: 1;
-}
-
-.grid_gallery .img-box span {
-    position: absolute;
-    bottom: 50px;
-    left: 130px;
-    color: aliceblue; }
 
     h2 {
         text-align: center;
@@ -120,23 +77,6 @@ text-align: center;}
       position: absolute;
     }
     
-    .tarjetas {
-        display: flex;
-        padding: 60px;
-        gap: 30px;
-    }
-    .tarjeta {
-        border-radius: 30px;
-        overflow: hidden;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        
-    }
-
-    .tarjeta__imagen {
-        max-width: 100%;
-    }
 
 .wpp {  position: fixed;
 bottom: 10px;
@@ -167,7 +107,7 @@ width: 100px;
  @media screen and (max-width: 768px) {
     display: { grid;
         grid-template-columns: repeat(1, 2fr);
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
       gap: 10px;
     
     }
