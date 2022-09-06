@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+header {
+  background-color: white;
+  display: flex;
+  gap: 20px;
+}
+
+.logo {
+  width: 200px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand {
+  color: white;
+}
+
+.img-fluid {
+  height: 80vh;
+  background-image: url(../img/barberia.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-inline: 450px;
+  font-weight: 800;
+  align-items: center;
+}
+
+.imagenPrincipal p {
+  color: white;
+  padding-inline: 15px;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  font-weight: 800;
+}
+
+h3 {
+  text-align: center;
+  font-weight: 800;
+}
+
+.contenservic {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.servicimg {
+  width: 50%;
+}
+
+.servicimage {
+  position: absolute;
+}
+
+.wpp {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 100px;
+}/*# sourceMappingURL=estilo.css.map */
